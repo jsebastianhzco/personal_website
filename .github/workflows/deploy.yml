@@ -9,13 +9,16 @@ jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Upload files via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+      - name: Upload via FTP
+        uses: appleboy/ftp-action@v0.0.4
         with:
-          server: ${{ secrets.FTP_HOST }}
+          host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/
+          port: 21
+          protocol: ftp
+          local_dir: .
+          remote_dir: /public_html/
