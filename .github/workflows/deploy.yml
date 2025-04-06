@@ -1,4 +1,4 @@
-name: Deploy via FTP
+name: Deploy website on push
 
 on:
   push:
@@ -6,19 +6,18 @@ on:
       - main
 
 jobs:
-  ftp-deploy:
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
 
-      - name: Upload via FTP
-        uses: appleboy/ftp-action@v0.0.4
-        with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          protocol: ftp
-          local_dir: .
-          remote_dir: /public_html/
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v4
+
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /domains/jsebastianhz.com/public_html/
