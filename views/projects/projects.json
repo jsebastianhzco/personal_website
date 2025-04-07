@@ -1,0 +1,29 @@
+[
+    {
+      "id": "vista-web-website",
+      "title": "vista Web QC",
+      "thumb": "images/01hero1.jpg",
+      "image": "images/01hero.jpg",
+      "link": "project.html?id=son-of-a-tailor",
+      "year": "2024",
+      "category": "Web Development"
+    },
+    {
+      "id": "carrera-del-sol",
+      "title": "Carrera del Sol",
+      "thumb": "images/images/02hero2.jpg",
+      "image": "images/01hero.jpg",
+      "link": "project.html?id=carrera-del-sol",
+      "year": "2024",
+      "category": "Web Development"
+    },
+    {
+      "id": "carrera-del-sol",
+      "title": "Carrera del Sol",
+      "thumb": "images/images/02hero2.jpg",
+      "image": "images/01hero.jpg",
+      "link": "project.html?id=carrera-del-sol",
+      "year": "2024",
+      "category": "Web Development"
+    }
+  ]

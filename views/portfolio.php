@@ -97,174 +97,46 @@
                                         </ul>
                                     </div>
                                     
-                                    
+
                                     <!-- ClaPat Portfolio -->
-                                    <div class="showcase-portfolio expand-grid">
-                                        
-                                        <div class="clapat-item photo-filter">
-                                            <div class="slide-inner trigger-item" data-centerLine="OPEN">                                                    
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project01.html"></a>
-                                                    <div class="section-image trigger-item-link">
-                                                        <img src="images/01hero.jpg" class="item-image grid__item-img" alt="">
-                                                    </div>                                                
-                                                    <img src="images/01hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                                    <div class="section-thumb">
-                                                        <img src="images/01hero1.jpg" alt="">
-                                                    </div>                              
-                                                </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>Son of a Tailor</span></div>                                                    
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Branding</span></div>                                             
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="clapat-item design-filter">
-                                            <div class="slide-inner trigger-item" data-centerLine="OPEN">                                                    
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project02.html"></a>
-                                                    <div class="section-image  trigger-item-link">
-                                                        <img src="images/02hero.jpg" class="item-image grid__item-img" alt="">
-                                                    </div>                                                
-                                                    <img src="images/02hero.jpg" class="grid__item-img grid__item-img--large" alt="">   
-                                                    <div class="section-thumb">
-                                                        <img src="images/02hero1.jpg" alt="">
-                                                    </div>                           
-                                                </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>This is Willo</span></div>
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Web Design</span></div>                                          
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="clapat-item photo-filter">                                                
-                                            <div class="slide-inner trigger-item" data-centerLine="OPEN">                                                    
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project03.html"></a>
-                                                    <div class="section-image trigger-item-link">
-                                                        <img src="images/03hero.jpg" class="item-image grid__item-img" alt="">
-                                                    </div>                                                
-                                                    <img src="images/03hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                                    <div class="section-thumb">
-                                                        <img src="images/03hero1.jpg" alt="">
-                                                    </div>                              
-                                                </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>The Infin</span></div>
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Photography</span></div>                                             
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="clapat-item video-filter">
-                                            <div class="slide-inner trigger-item" data-centerLine="OPEN">                                                    
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project04.html"></a>
-                                                    <div class="section-image trigger-item-link">
-                                                        <img src="images/04hero.jpg" class="item-image grid__item-img" alt="">
-                                                        <div class="hero-video-wrapper">
-                                                            <video loop muted class="bgvid">
-                                                                <source src="images/04hero.mp4" type="video/mp4">
-                                                            </video>
-                                                        </div>
-                                                    </div>                                                
-                                                    <img src="images/04hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                                    <div class="section-thumb">
-                                                        <img src="images/04hero.jpg" alt="">
-                                                    </div>                              
-                                                </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>The Invincibles</span></div>
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Video Production</span></div>                                        
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="clapat-item design-filter">
-                                            <div class="slide-inner align-top trigger-item change-header" data-centerLine="OPEN">
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project05.html"></a>
-                                                    <div class="section-image trigger-item-link">
-                                                        <img src="images/05hero.jpg" class="item-image grid__item-img" alt="">                                                            
-                                                    </div>                                                
-                                                    <img src="images/05hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                                    <div class="section-thumb">
-                                                        <img src="images/05hero1.jpg" alt="">
-                                                    </div>                               
-                                                </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>Kivira Naturals</span></div>
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Graphic Design</span></div>                                         
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
+                                    <div class="showcase-portfolio expand-grid" id="projects-grid">
+                                      
+
+
+                                    <?php
+
+$jsonPath = __DIR__ . '/projects/projects.json';
+$projects = [];
+
+if (file_exists($jsonPath)) {
+    $json = file_get_contents($jsonPath);
+    $projects = json_decode($json, true);
+}
+
+
+                                        foreach ($projects as $project): ?>
                                         <div class="clapat-item photo-filter">
                                             <div class="slide-inner trigger-item" data-centerLine="OPEN">
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project06.html"></a>
-                                                    <div class="section-image trigger-item-link">
-                                                        <img src="images/06hero.jpg" class="item-image grid__item-img" alt="">
-                                                    </div>                                                
-                                                    <img src="images/06hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                                    <div class="section-thumb">
-                                                        <img src="images/06hero1.jpg" alt="">
-                                                    </div>                               
+                                            <div class="img-mask pixels-cover">
+                                                <a class="slide-link" data-type="page-transition" href="<?= $project['link'] ?>"></a>
+                                                <div class="section-image trigger-item-link">
+                                                <img src="<?= $project['image'] ?>" class="item-image grid__item-img" alt="<?= $project['title'] ?>">
                                                 </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>Voxa Speaker</span></div>
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Product Design</span></div>                                        
+                                                <img src="<?= $project['image'] ?>" class="grid__item-img grid__item-img--large" alt="<?= $project['title'] ?>">
+                                                <div class="section-thumb">
+                                                <img src="<?= $project['thumb'] ?>" alt="<?= $project['title'] ?>">
                                                 </div>
+                                            </div>
+                                            <div class="slide-caption trigger-item-link-secondary">
+                                                <div class="slide-title"><span><?= $project['title'] ?></span></div>
+                                                <div class="slide-date"><span><?= $project['year'] ?></span></div>
+                                                <div class="slide-cat"><span><?= $project['category'] ?></span></div>
+                                            </div>
                                             </div>
                                         </div>
-                                        
-                                        <div class="clapat-item design-filter">
-                                            <div class="slide-inner trigger-item" data-centerLine="OPEN">
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project07.html"></a>
-                                                    <div class="section-image trigger-item-link">
-                                                        <img src="images/07hero.jpg" class="item-image grid__item-img" alt="">
-                                                    </div>                                                
-                                                    <img src="images/07hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                                    <div class="section-thumb">
-                                                        <img src="images/07hero1.jpg" alt="">
-                                                    </div>                               
-                                                </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>Nanotech Agency</span></div>
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Graphic Design</span></div>                                          
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="clapat-item vertical-parallax photo-filter">
-                                             <div class="slide-inner trigger-item" data-centerLine="OPEN">
-                                                <div class="img-mask pixels-cover">
-                                                    <a class="slide-link" data-type="page-transition" href="project08.html"></a>
-                                                    <div class="section-image trigger-item-link">
-                                                        <img src="images/08hero.jpg" class="item-image grid__item-img" alt="">
-                                                    </div>                                                
-                                                    <img src="images/08hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                                    <div class="section-thumb">
-                                                        <img src="images/08hero.jpg" alt="">
-                                                    </div>                               
-                                                </div>
-                                                <div class="slide-caption trigger-item-link-secondary">
-                                                    <div class="slide-title"><span>VX Lab</span></div>
-                                                    <div class="slide-date"><span>2025</span></div>
-                                                    <div class="slide-cat"><span>Photography</span></div>                                            
-                                                </div>
-                                            </div>
-                                        </div>                                             
+                                        <?php endforeach; ?>
+
+
                                                                                 
                                     </div>
                                     <!-- ClaPat Portfolio -->

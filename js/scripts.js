@@ -25,12 +25,17 @@ jQuery(function ($) {
 		CustomFunction();
 		ShuffleElementsFunction();
 		InitShuffleElements();
+
 	});
 	
 	
 /*--------------------------------------------------
 Function CustomFunction
 ---------------------------------------------------*/
+
+
+
+
 
 	function CustomFunction() {
 		

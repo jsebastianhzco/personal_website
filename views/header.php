@@ -21,7 +21,7 @@
                     <nav class="clapat-nav-wrapper"> 
                         <div class="nav-height">          
                             <ul data-breakpoint="1025" class="flexnav">
-                                <li class="menu-timeline link"><a class="ajax-link active" data-type="page-transition" href="index.php?page=home"><div class="before-span"><span data-hover="Index">Index</span></div></a></li>
+                                <li class="menu-timeline link"><a class="ajax-link active" data-type="page-transition" href="index.php?page=home"><div class="before-span"><span data-hover="Index">Home</span></div></a></li>
                                 <li class="menu-timeline link"><a class="ajax-link" data-type="page-transition" href="index.php?page=portfolio"><div class="before-span"><span data-hover="Projects">Projects</span></div></a> </li>
 
                             </ul>
@@ -31,7 +31,7 @@
                     
                     
                     <!-- Header Button -->
-                    <a class="header-button ajax-link" data-type="page-transition" href="">
+                    <a class="header-button"  target="_blank" href="cv_johan_2025.pdf">
                         <div class="button-icon-link right">                        
                             <div class="icon-wrap-scale">
                                 <div class="icon-wrap parallax-wrap">
@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="button-text sticky right"><span data-hover="Let's Talk">Check my CV</span></div>                        
+                            <div class="button-text sticky right"><span data-hover="Check my CV">Check my CV</span></div>                        
                         </div>
                     </a>
                     <!--/Header Button -->

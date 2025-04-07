@@ -369,7 +369,7 @@
                                     <div class="content-row full row_padding_top light-section text-align-center" data-bgcolor="#c8c8c8">
                                         
                                         <p class="bigger has-shuffle no-margins secondary-font">Ready to work together?</p>
-                                        <div id="copy-email" data-hover-message="Copy Mail" data-clicked-message="Copied"><span>office@bennet.com</span></div>
+                                        <div id="copy-email" data-hover-message="Copy Mail" data-clicked-message="Copied"><span>jsebastianhzco@gmail.com</span></div>
                                         
                                     </div> 
                                     <!--/Row -->
@@ -420,7 +420,7 @@
                         </div>
                         
                         <div class="footer-middle">
-                            <div class="copyright">2025 © <a class="link" target="_blank" href="https://www.clapat.com/">ClaPat</a>. All rights reserved.</div>
+                            <div class="copyright">2025 © <a class="link" target="_blank" href="https://www.agenciaquimera.co/">Agencia Quimera</a>. All rights reserved.</div>
                         </div>
                         
                         <div class="socials-wrap">            	
